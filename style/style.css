@@ -1,10 +1,9 @@
-.container {/*width: 900px;*/  margin-top: 20px;}
+.container { margin-top: 20px;}
 .header {width: inherit; height: 50px; 
 border-bottom: 2px solid 	#4682B4;
 background-color: #E6E6FA; }
 .row  {margin-left: 0px;}
-.header span {font-size: 20px; line-height: 50px; 
-/*font-family: Domkrat;*/}
+.header span {font-size: 20px; line-height: 50px;} 
 .left {margin-left: 0px; text-align: center;
 border-right: 2px solid 	#FFFAFA;}
 .center{text-align: center; margin-left: 18px;
@@ -21,8 +20,14 @@ margin-top: 5px;}
 .close {margin-right: 10px; margin-top: 5px;}
 .modal ul {list-style-type: none;}
 
-
-
+.modal-body {font-size: 16px; padding-top: 0px;}
+#user_street {margin-left: 15px;}
+#user_suite {margin-left: 15px;}
+#user_city {margin-left: 15px;}
+#user_company_name {margin-left: 15px;}
+#user_catchPhrase {margin-left: 15px;}
+.modal-body span {font-weight: bold;}
+.modal-header {font-weight: bold; font-size: 32px; margin: 10px 0px;}
 
 
 
