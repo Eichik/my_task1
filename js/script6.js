@@ -1,7 +1,8 @@
 
     $(document).ready(function (){
         $('#getInform_6').click(function (){ 
-          var data = {name: "Mrs. Dennis Schulist", id: "6"};  
+          var data = {name: "Mrs. Dennis Schulist", id: "6"}; 
+          history.pushState(data, null, $(this).attr('href'));
           $.get("http://jsonplaceholder.typicode.com/users", data,  success, "json" )
           function success(InformData) {
             $('.modal-header').html( InformData[0].name);

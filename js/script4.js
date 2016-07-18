@@ -1,7 +1,8 @@
 
     $(document).ready(function (){
         $('#getInform_4').click(function (){ 
-          var data = {name: "Patricia Lebsack", id: "4"};  
+          var data = {name: "Patricia Lebsack", id: "4"}; 
+          history.pushState(data, null, $(this).attr('href'));
           $.get("http://jsonplaceholder.typicode.com/users", data,  success, "json" )
           function success(InformData) {
             $('.modal-header').html( InformData[0].name);

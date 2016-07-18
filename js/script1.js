@@ -1,9 +1,10 @@
 
     $(document).ready(function (){
         $('#getInform_1').click(function (){ 
-          var data = {name: "Leanne Graham", id: "1"};  
-          $.get("http://jsonplaceholder.typicode.com/users", data,  success, "json" )
-          function success(InformData) {
+          history.pushState(data, null, $(this).attr('href')); 
+           var data = {name: "Leanne Graham", id: "1"}; 
+           $.get("http://jsonplaceholder.typicode.com/users", data,  success, "json" )
+            function success(InformData) {
             $('.modal-header').html( InformData[0].name);
             $('#user_username').html("Username: " + InformData[0].username);
             $('#user_email').html("Email: " + InformData[0].email);
@@ -15,12 +16,15 @@
             $('#user_website').html("Website: " + InformData[0].website);
 
             $('#user_company_name').html("Name: " + InformData[0].company.name);
-            $('#user_catchPhrase').html("СatchPhrase: " + InformData[0].company.catchPhrase);
-            
-            
-            
+            $('#user_catchPhrase').html("СatchPhrase: " + InformData[0].company.catchPhrase);       
             $('#modal').modal();
-           
+            
+            window.onload(function() {
+            var currentState = history.state;
+            //location.href = (e.state === null) ? location.href : e.state;
+            $('#modal').modal();
+            });
+
           };
         });
     });

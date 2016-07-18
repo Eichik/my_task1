@@ -15,7 +15,8 @@ border-right: 2px solid 	#FFFAFA;}
 .content .line:nth-child(2n) {background-color:#e8edff; }
 .content .line span {font-size: 16px; line-height: 40px; }
 .content .line .btn-default {height: 30px; width: 160px; 
-margin-top: 5px;}
+margin: 5px 0px;}
+.content .line .right form {margin: 0px;}
 
 .close {margin-right: 10px; margin-top: 5px;}
 .modal ul {list-style-type: none;}

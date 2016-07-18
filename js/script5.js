@@ -2,6 +2,7 @@
     $(document).ready(function (){
         $('#getInform_5').click(function (){ 
           var data = {name: "Chelsey Dietrich", id: "5"};  
+          history.pushState(data, null, $(this).attr('href'));
           $.get("http://jsonplaceholder.typicode.com/users", data,  success, "json" )
           function success(InformData) {
              $('.modal-header').html( InformData[0].name);
