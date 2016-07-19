@@ -21,8 +21,13 @@
             
             window.onload(function() {
             var currentState = history.state;
-            //location.href = (e.state === null) ? location.href : e.state;
-            $('#modal').modal();
+            if (currentState != null) {
+              $('#modal').html(currentState);
+              $('#modal').modal();
+            }
+            else 
+              return location.href;
+                        
             });
 
           };
