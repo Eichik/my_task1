@@ -19,16 +19,7 @@
             $('#user_catchPhrase').html("СatchPhrase: " + InformData[0].company.catchPhrase);       
             $('#modal').modal();
             
-            window.onload(function() {
-            var currentState = history.state;
-            if (currentState != null) {
-              $('#modal').html(currentState);
-              $('#modal').modal();
-            }
-            else 
-              return location.href;
-                        
-            });
+           
 
           };
         });
