@@ -1,8 +1,8 @@
 $(document).ready(function (){
     $('#getInform_1').click(function (){ 
-    // history.pushState(data, null, $(this).attr('href')); 
-     var data = {name: "Leanne Graham", id: "1"}; 
-     $.get("http://jsonplaceholder.typicode.com/users", data,  success, "json" )
+    history.pushState(data, null, $(this).attr('href')); 
+    var data = {name: "Leanne Graham", id: "1"}; 
+    $.get("http://jsonplaceholder.typicode.com/users", data,  success, "json" )
     function success(InformData) {
     $('.modal-header').html( InformData[0].name);
     $('#user_username').html("Username: " + InformData[0].username);
@@ -16,6 +16,7 @@ $(document).ready(function (){
 
     $('#user_company_name').html("Name: " + InformData[0].company.name);
     $('#user_catchPhrase').html("СatchPhrase: " + InformData[0].company.catchPhrase);       
+    
     $('#modal').modal();
     };
     });

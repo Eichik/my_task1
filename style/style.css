@@ -1,34 +1,81 @@
-.container { margin-top: 20px;}
-.header {width: inherit; height: 50px; 
-border-bottom: 2px solid 	#4682B4;
-background-color: #E6E6FA; }
-.row  {margin-left: 0px;}
-.header span {font-size: 20px; line-height: 50px;} 
-.left {margin-left: 0px; text-align: center;
-border-right: 2px solid 	#FFFAFA;}
-.center{text-align: center; margin-left: 18px;
-border-right: 2px solid 	#FFFAFA;}
-.right {text-align: center; margin-left: 18px; }
+.container { 
+	/*делаем аккуратный отступ сверху*/
+	margin-top: 20px;
+}
+.header {
+	background-color: #E6E6FA; 
+	border-bottom: 2px solid #4682B4;
+}
+.row  {
+	/*убираем отступы, которые есть по умолчанию в bootstrap */
+	margin-left: 0px;
+}
+.header span {
+	font-size: 20px; 
+	line-height: 50px;
+} 
+.left {
+	margin-left: 0; 
+	text-align: center;
+	border-right: 2px solid #FFFAFA;
+}
+.center {
+	text-align: center; 
+	border-right: 2px solid #FFFAFA;
+	/*меняем отступ с учетом вертикальный границ*/
+	margin-left: 18px;
+}
+.right {
+	text-align: center; 
+	margin-left: 18px; 
+}
+.content {
+	width: inherit; 
+}
+.line {
+	text-align: center;
+}
+.line:nth-child(2n) {
+	/*каждая четная строка будет светло-голубой*/
+	background-color: #e8edff; 
+}
+.line span {
+	font-size: 16px; 
+	line-height: 40px; 
+}
+.line .btn-default {
+	height: 30px; 
+	width: 160px; 
+	margin: 5px 0;
+}
+.line .right form {
+	margin: 0;
+}
+.close {
+	margin-right: 10px; 
+	margin-top: 5px;
+}
 
-.content {width: inherit; }
-.content .line {will-change: inherit; text-align: center;}
-.content .line:nth-child(2n) {background-color:#e8edff; }
-.content .line span {font-size: 16px; line-height: 40px; }
-.content .line .btn-default {height: 30px; width: 160px; 
-margin: 5px 0px;}
-.content .line .right form {margin: 0px;}
-
-.close {margin-right: 10px; margin-top: 5px;}
-.modal ul {list-style-type: none;}
-
-.modal-body {font-size: 16px; padding-top: 0px;}
-#user_street {margin-left: 15px;}
-#user_suite {margin-left: 15px;}
-#user_city {margin-left: 15px;}
-#user_company_name {margin-left: 15px;}
-#user_catchPhrase {margin-left: 15px;}
-.modal-body span {font-weight: bold;}
-.modal-header {font-weight: bold; font-size: 32px; margin: 10px 0px;}
+.modal-body {
+	font-size: 16px; 
+	padding-top: 0;
+}
+#user_street, 
+#user_suite, 
+#user_city, 
+#user_company_name, 
+#user_catchPhrase {
+	/*делам отступ для полей модального окна*/
+	margin-left: 15px;
+}
+.modal-body span {
+	font-weight: bold;
+}
+.modal-header {
+	font-weight: bold; 
+	font-size: 32px; 
+	margin: 10px 0;
+}
 
 
 
