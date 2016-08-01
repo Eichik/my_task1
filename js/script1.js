@@ -1,23 +1,101 @@
 $(document).ready(function (){
-    $('#getInform_1').click(function (){ 
-    history.pushState(data, null, $(this).attr('href')); 
-    var data = {name: "Leanne Graham", id: "1"}; 
-    $.get("http://jsonplaceholder.typicode.com/users", data,  success, "json" )
-    function success(InformData) {
-    $('.modal-header').html( InformData[0].name);
-    $('#user_username').html("Username: " + InformData[0].username);
-    $('#user_email').html("Email: " + InformData[0].email);
-    $('#user_street').html("Street: " + InformData[0].address.street);
-    $('#user_suite').html("Suite: " + InformData[0].address.suite);
-    $('#user_city').html("City: " + InformData[0].address.city);
-            
-    $('#user_phone').html("Phone: " + InformData[0].phone);
-    $('#user_website').html("Website: " + InformData[0].website);
-
-    $('#user_company_name').html("Name: " + InformData[0].company.name);
-    $('#user_catchPhrase').html("СatchPhrase: " + InformData[0].company.catchPhrase);       
-    
-    $('#modal').modal();
-    };
+    var template_user ='<div class="left span5">\
+        <span class="name_user">{{name}}</span> \
+        </div><div class="center span3"> \
+        <span>{{id}} </span></div>' ;
+    $.get("http://jsonplaceholder.typicode.com/users",  function(data){
+        data.forEach(function(entry){
+        var result = Mustache.render(template_user, entry);
+        $('.line').appeng($('.template_user')).html(result);
+        //$('.template_user').append(result);
+        });
     });
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   // $('#getInform_1').click(function (){ 
+
+        
+    //console.log(result);
+        /*var template = '<div id="modal" class="modal hide fade">\
+   <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>\
+        <div class="modal-header">{{name}}</div>\
+    <div class="modal-body">\
+        <div id="user_username">{{username}} </div>\
+        <div id="user_email" >{{email}} </div>\
+        <div id="user_street">{{street}} </div>\
+        <div id="user_suite">{{suite}} </div>\
+        <div id="user_city">{{city}} </div>\
+        <div id="user_phone">{{phone}} </div>\
+        <div id="user_website">{{website}} </div>\
+        <div id="user_company_name">{{name}} </div>\
+        <div id="user_catchPhrase">{{catchPhrase}} </div>\
+    </div></div>';*/
+    
+   
+    
+    //$.get("http://jsonplaceholder.typicode.com/users",  function(data){ 
+        
+//var renderer = Mustache.render(template, data);
+    //console.log(renderer);
+    //$('body').append('#modal').html(renderer).modal;  
+    
+  //  }
+   // );
+   // });
+//});
+    //history.pushState(data, null, $(this).attr('href')); 
+    
