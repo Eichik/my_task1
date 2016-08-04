@@ -5,205 +5,133 @@
 <title>My_task </title>
 <link href="style/bootstrap.min.css" rel="stylesheet">
 <link href="style/style.css" rel="stylesheet">
-
-<script type="text/javascript" src="http://ajax.microsoft.com/ajax/jQuery/jquery-1.11.0.min.js"></script>
-<script src="js/jquery.mobile-1.4.5.min.js"></script>
-<script src="js/bootstrap.min.js" type="text/javascript"></script>
-<script type="text/javascript" src="js/mustache.js"></script> 
-
+    <script src="http://ajax.microsoft.com/ajax/jQuery/jquery-1.11.0.min.js"  type="text/javascript"></script>
+    <script src="js/jquery.mobile-1.4.5.min.js"></script>
+    <script src="js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="js/mustache.js" type="text/javascript"></script> 
 </head>
 <body>
 <div class="container">
-
     <div class="header">
-    <div class="row">
-        <div class="span5 left"> 
-            <span>Name </span>    
-        </div> 
-        <div class="span3 center">
-            <span>ID of user </span>           
-         </div> 
-        <div class="span4 right"> 
-            <span>Action</span>               
-        </div> 
-        
+        <div class="row">
+            <div class="span5 left"> 
+                <span>Name </span></div> 
+            <div class="span3 center">
+                <span>ID of user </span></div> 
+            <div class="span4 right"> 
+                <span>Action</span></div> 
+        </div>
     </div>
+<div class="content"> 
+    <div class="line">
+        <div class="row">    
+            <div class="template_user" > </div>
+                <div class="right span4"> 
+                    <form>
+                    <button  type="submit" class="btn btn-default getInform">Show</button>
+                    </form>
+                </div>
+        </div>
+    </div>
+    <div class="line">
+        <div class="row">    
+            <div class="template_user" > </div>   
+                <div class="right span4"> 
+                    <form>
+                    <button  type="submit" class="btn btn-default getInform">Show</button>
+                    </form>
+                </div>
+        </div>
+    </div>
+    <div class="line">
+        <div class="row">    
+            <div class="template_user" ></div>
+                <div class="right span4"> 
+                    <form>
+                    <button type="submit" class="btn btn-default getInform">Show</button>
+                </form>
+                </div>
+        </div>
+    </div>
+    <div class="line">
+        <div class="row">    
+            <div class="template_user" ></div>
+                <div class="right span4"> 
+                    <form>
+                    <button type="submit" class="btn btn-default getInform">Show</button>
+                </form>
+                </div>
+        </div>
+    </div>
+    <div class="line">
+        <div class="row">    
+            <div class="template_user" ></div>
+                <div class="right span4"> 
+                    <form>
+                    <button type="submit" class="btn btn-default getInform">Show</button>
+                </form>
+                </div>
+        </div>
+    </div>
+    <div class="line">
+        <div class="row">    
+            <div class="template_user" ></div>
+                <div class="right span4"> 
+                    <form>
+                    <button type="submit"  class="btn btn-default getInform">Show</button>
+                </form>
+                </div>
+        </div>
+    </div>
+      <div class="line">
+        <div class="row">    
+            <div class="template_user" ></div>
+                <div class="right span4"> 
+                    <form>
+                    <button type="submit" class="btn btn-default getInform">Show</button>
+                </form>
+                </div>
+        </div>
+    </div>
+       <div class="line">
+        <div class="row">    
+            <div class="template_user" ></div>
+                <div class="right span4"> 
+                    <form>
+                    <button type="submit" class="btn btn-default getInform">Show</button>
+                </form>
+                </div>
+        </div>
     </div>
 
-    <div class="content"> 
-        <div class="line">
-        <div class="row">   
-        
-        <div class="right span4"> 
-            <form>
-                <button href="id=1" type="submit" class="btn btn-default" id="getInform_1">Show</button>
-            </form>
-                  
-        </div>
-        </div>
-        </div>
-        
-        <div class="line">
+      <div class="line">
         <div class="row">    
-        
-        <div class="right span4"> 
-            <form>
-                <button href="id=2" type="submit" class="btn btn-default" id="getInform_2">Show</button>
-            </form>
+            <div class="template_user" ></div>
+                <div class="right span4"> 
+                    <form>
+                    <button type="submit" class="btn btn-default getInform">Show</button>
+                </form>
+                </div>
         </div>
-        </div>
-        </div>
+    </div>
 
-        <div class="line">
+      <div class="line">
         <div class="row">    
-        <div class="template_user" >
-        <div class="left span5">
-            <span class="name_user">{{name}}</span> 
+            <div class="template_user" ></div>
+                <div class="right span4"> 
+                    <form>
+                    <button type="submit" class="btn btn-default getInform">Show</button>
+                </form>
+                </div>
         </div>
-        <div class="center span3"> 
-            <span>{{id}} </span>
-        </div>
-        </div>
-        <div class="right span4"> 
-            <form>
-                <button href="id=3" type="submit" class="btn btn-default" id="getInform_3">Show</button>
-            </form>
-        </div>
-        </div>
-        </div>
-
-        <div class="line">
-        <div class="row">    
-        <div class="template_user" >
-        <div class="left span5">
-            <span class="name_user">{{name}}</span> 
-        </div>
-        <div class="center span3"> 
-            <span>{{id}} </span>
-        </div>
-        </div>
-        <div class="right span4"> 
-            <form>
-                <button href="id=4" type="submit" class="btn btn-default" id="getInform_4">Show</button>
-            </form>
-        </div>
-        </div>
-        </div>
-
-        <div class="line">
-        <div class="row">    
-        <div class="template_user" >
-        <div class="left span5">
-            <span class="name_user">{{name}}</span> 
-        </div>
-        <div class="center span3"> 
-            <span>{{id}} </span>
-        </div>
-        </div>
-        <div class="right span4"> 
-            <form>
-                <button href="id=5" type="submit" class="btn btn-default" id="getInform_5">Show</button>
-            </form>
-        </div>
-        </div>
-        </div>
-
-        <div class="line">
-        <div class="row">    
-        <div class="template_user" >
-        <div class="left span5">
-            <span class="name_user">{{name}}</span> 
-        </div>
-        <div class="center span3"> 
-            <span>{{id}} </span>
-        </div>
-        </div>
-        <div class="right span4"> 
-            <form>
-                <button href="id=6" type="submit" class="btn btn-default" id="getInform_6">Show</button>
-            </form>
-        </div>
-        </div>
-        </div>
-
-        <div class="line">
-        <div class="row">    
-        <div class="template_user" >
-        <div class="left span5">
-            <span class="name_user">{{name}}</span> 
-        </div>
-        <div class="center span3"> 
-            <span>{{id}} </span>
-        </div>
-        </div>
-        <div class="right span4"> 
-            <form>
-                <button href="id=7" type="submit" class="btn btn-default" id="getInform_7">Show</button>
-            </form>
-        </div>
-        </div>
-        </div>
-
-        <div class="line">
-        <div class="row">    
-        <div class="template_user" >
-        <div class="left span5">
-            <span class="name_user">{{name}}</span> 
-        </div>
-        <div class="center span3"> 
-            <span>{{id}} </span>
-        </div>
-        </div>
-        <div class="right span4"> 
-            <form>
-                <button href="id=8" type="submit" class="btn btn-default" id="getInform_8">Show</button>
-            </form>
-        </div>
-        </div>
-        </div>
-
-        <div class="line">
-        <div class="row">    
-        <div class="template_user" >
-        <div class="left span5">
-            <span class="name_user">{{name}}</span> 
-        </div>
-        <div class="center span3"> 
-            <span>{{id}} </span>
-        </div>
-        </div>
-        <div class="right span4"> 
-            <form>
-                <button href="id=9" type="submit" class="btn btn-default" id="getInform_9">Show</button>
-            </form>
-        </div>
-        </div>
-        </div>
-
-        <div class="line">
-        <div class="row">    
-        <div class="template_user" >
-        <div class="left span5">
-            <span class="name_user">{{name}}</span> 
-        </div>
-        <div class="center span3"> 
-            <span>{{id}} </span>
-        </div>
-        </div>
-        <div class="right span4"> 
-            <form>
-                <button href="id=10" type="submit" class="btn btn-default" id="getInform_10">Show</button>
-            </form>
-        </div>
-        </div>
-        </div>
+    </div>
         
     </div>
 </div>
 <!-- модальное окна-->
 <div id="modal" class="modal hide fade">
    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-    <div class="modal-header">{{name}}</div>
+    <!--<div class="modal-header">{{name}}</div>
     <div class="modal-body">
         <div id="user_username">{{Username}} </div>
         <div id="user_email" >{{Email}} </div>
@@ -216,7 +144,7 @@
         <span>Company:</span>
         <div id="user_company_name">{{Name}} </div>
         <div id="user_catchPhrase">{{CatchPhrase}} </div>
-    </div>
+    </div>-->
 </div>
 
 
